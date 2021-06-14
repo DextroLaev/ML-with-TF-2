@@ -23,3 +23,14 @@
   data is balanced data you can use threshold of 0.5 for better performance.
       
       $ python3 logistic.py
+### Nelder-Mead optimization method
+   An optimization algorithm to find minimum of an objective function in a multidimensional space without calculating gradient.
+   In the given file , I have used (Himmelblau's function) and (Rosenbrock banana function).
+   
+   Rosenbrock banana function : https://en.wikipedia.org/wiki/Rosenbrock_function.
+   
+   Himmelblau's function : https://en.wikipedia.org/wiki/Himmelblau%27s_function.
+   
+   Nelder-Mead method : https://en.wikipedia.org/wiki/Nelder%E2%80%93Mead_method.
+        
+       $ python3 nelder_mead_optimizer.py

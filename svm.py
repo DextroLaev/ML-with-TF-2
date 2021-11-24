@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import tensorflow as tf
 import matplotlib.pyplot as plt
-import separable_data
 import numpy as np
 
 class lg_dataset:
@@ -33,7 +32,7 @@ class lg_dataset:
 		plt.show()
 
 def load_data(dataset_name,plot=False):
-	if dataset_name=='linear_regression':
+	if dataset_name=='svm':
 				__dataset=lg_dataset()
 				if plot:
 					__dataset.plot()
@@ -104,7 +103,7 @@ class SVM:
 		self.bias = [0]	
 
 if __name__=='__main__':
-	(train_data,train_label) = load_data('linear_regression')
+	(train_data,train_label) = load_data('svm')
 	epochs = int(input("Enter Epochs:- "))
 	classifier = SVM(train_data,train_label,epochs)
 	tf.print('width: ',2/tf.norm(classifier.weights))
